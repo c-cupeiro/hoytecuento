@@ -49,5 +49,15 @@ class ButtonImageLabelDown: UIView {
         let nib = UINib(nibName: "ButtonImageLabelDown", bundle: bundle)
         return nib.instantiate(withOwner: self, options: nil).first as! UIView
     }
+    
+    
+    func simulateButtonAnimation(){
+        self.alpha = 0.5
+        let when = DispatchTime.now()+0.1
+        DispatchQueue.main.asyncAfter(deadline: when){ [weak self] in
+            self?.alpha = 1
+        }
+    }
+    
 
 }

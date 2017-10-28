@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SnellRoundhand.ttc">
+            <string>SnellRoundhand-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Initial View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,18 +22,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOT-YV-fan" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
-                                <rect key="frame" x="264" y="303" width="219" height="248"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Historia"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="Historia"/>
-                                </userDefinedRuntimeAttributes>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Buho" translatesAutoresizingMaskIntoConstraints="NO" id="bxm-B2-XK8">
+                                <rect key="frame" x="20" y="271" width="280" height="397"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="397" id="2f8-Ma-NNh"/>
+                                    <constraint firstAttribute="width" constant="280" id="dgy-Op-Bzl"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-Ha-muB">
+                                <rect key="frame" x="308" y="20" width="716" height="648"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bocadillo_Inicio" translatesAutoresizingMaskIntoConstraints="NO" id="CjQ-qc-J18">
+                                        <rect key="frame" x="0.0" y="0.0" width="716" height="648"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy te cuento..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZf-E2-Twb">
+                                        <rect key="frame" x="66" y="104" width="584" height="114"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOT-YV-fan" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                        <rect key="frame" x="137" y="244" width="208" height="237"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="Historia"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Historia"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T47-yi-Uzd" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                        <rect key="frame" x="376" y="244" width="208" height="237"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="Bocadillo"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Comic"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="leading" secondItem="DOT-YV-fan" secondAttribute="trailing" constant="31" id="07B-HG-Wcm"/>
+                                    <constraint firstAttribute="trailing" secondItem="OZf-E2-Twb" secondAttribute="trailing" constant="66" id="3MT-V2-EwC"/>
+                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="width" secondItem="DOT-YV-fan" secondAttribute="width" id="5q5-Vk-EZH"/>
+                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="height" secondItem="DOT-YV-fan" secondAttribute="height" id="8AI-az-OM1"/>
+                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="top" secondItem="OZf-E2-Twb" secondAttribute="bottom" constant="26" id="ARn-uk-tmL"/>
+                                    <constraint firstItem="OZf-E2-Twb" firstAttribute="top" secondItem="Q1o-Ha-muB" secondAttribute="top" constant="104" id="Fxc-u9-TzY"/>
+                                    <constraint firstItem="DOT-YV-fan" firstAttribute="top" secondItem="OZf-E2-Twb" secondAttribute="bottom" constant="26" id="G50-M0-kPh"/>
+                                    <constraint firstItem="DOT-YV-fan" firstAttribute="leading" secondItem="Q1o-Ha-muB" secondAttribute="leading" constant="137" id="HCl-gi-0vd"/>
+                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="top" secondItem="Q1o-Ha-muB" secondAttribute="top" constant="244" id="Heu-sv-wfQ"/>
+                                    <constraint firstItem="CjQ-qc-J18" firstAttribute="top" secondItem="Q1o-Ha-muB" secondAttribute="top" id="RhC-Qf-lgK"/>
+                                    <constraint firstAttribute="bottom" secondItem="CjQ-qc-J18" secondAttribute="bottom" id="StG-no-WeZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="DOT-YV-fan" secondAttribute="bottom" constant="167" id="Wih-jk-6xU"/>
+                                    <constraint firstItem="OZf-E2-Twb" firstAttribute="leading" secondItem="Q1o-Ha-muB" secondAttribute="leading" constant="66" id="bvr-lB-uvY"/>
+                                    <constraint firstItem="CjQ-qc-J18" firstAttribute="leading" secondItem="Q1o-Ha-muB" secondAttribute="leading" id="gWm-V7-Ghw"/>
+                                    <constraint firstAttribute="trailing" secondItem="CjQ-qc-J18" secondAttribute="trailing" id="liy-nR-YpB"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.24215237649999999" green="1" blue="0.36963630580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q1o-Ha-muB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6hm-B2-pFq"/>
+                            <constraint firstItem="bxm-B2-XK8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FUu-t8-jpl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q1o-Ha-muB" secondAttribute="trailing" id="Vuy-2l-bF4"/>
+                            <constraint firstItem="Q1o-Ha-muB" firstAttribute="leading" secondItem="bxm-B2-XK8" secondAttribute="trailing" constant="8" id="fm1-AZ-CGz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q1o-Ha-muB" secondAttribute="bottom" constant="100" id="tyl-WJ-nNa"/>
+                            <constraint firstItem="bxm-B2-XK8" firstAttribute="bottom" secondItem="Q1o-Ha-muB" secondAttribute="bottom" id="wM8-mt-CEO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonComic" destination="T47-yi-Uzd" id="r0B-08-ReR"/>
+                        <outlet property="buttonHistory" destination="DOT-YV-fan" id="b06-qY-1ZZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,6 +97,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bocadillo" width="180" height="146"/>
+        <image name="Bocadillo_Inicio" width="1024" height="783"/>
+        <image name="Buho" width="906" height="1024"/>
         <image name="Historia" width="208" height="194"/>
     </resources>
 </document>

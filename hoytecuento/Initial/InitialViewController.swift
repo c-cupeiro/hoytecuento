@@ -10,9 +10,13 @@ import UIKit
 
 class InitialViewController: UIViewController {
 
+    @IBOutlet weak var buttonHistory: ButtonImageLabelDown!
+    @IBOutlet weak var buttonComic: ButtonImageLabelDown!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        buttonHistory.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.buttonHistoryTapped(_:))))
+        buttonComic.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.buttonComicTapped(_:))))
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +25,15 @@ class InitialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func buttonHistoryTapped(_ sender: UITapGestureRecognizer){
+        buttonHistory.simulateButtonAnimation()
+        print("Button History Pressed")
+        
     }
-    */
 
+    @objc func buttonComicTapped(_ sender: UITapGestureRecognizer){
+        buttonComic.simulateButtonAnimation()
+        print("Button Comic Pressed")
+    }
+    
 }
