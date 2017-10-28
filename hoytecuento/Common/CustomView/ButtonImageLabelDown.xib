@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SnellRoundhand.ttc">
+            <string>SnellRoundhand-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonImage" destination="vif-s0-aQC" id="q59-sf-3eN"/>
+                <outlet property="buttonLabel" destination="xf2-hp-NGC" id="B0r-Zg-ts9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="237"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xf2-hp-NGC">
+                    <rect key="frame" x="16" y="190" width="201" height="38"/>
+                    <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vif-s0-aQC">
+                    <rect key="frame" x="0.0" y="0.0" width="233" height="179"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vif-s0-aQC" secondAttribute="trailing" id="1Fp-sG-927"/>
+                <constraint firstItem="xf2-hp-NGC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="6Qa-qZ-5KA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xf2-hp-NGC" secondAttribute="bottom" constant="10" id="ChR-0M-6hN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xf2-hp-NGC" secondAttribute="trailing" constant="16" id="Kgx-vE-ftz"/>
+                <constraint firstItem="vif-s0-aQC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="SUd-qj-tcY"/>
+                <constraint firstItem="xf2-hp-NGC" firstAttribute="top" secondItem="vif-s0-aQC" secondAttribute="bottom" constant="10" id="cfL-UD-ijo"/>
+                <constraint firstItem="vif-s0-aQC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tDC-mp-w9e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-36.5" y="-160.5"/>
+        </view>
+    </objects>
+</document>

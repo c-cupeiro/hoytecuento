@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CAB8DC841FA4FEA100BE9A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8DC831FA4FEA100BE9A1C /* AppDelegate.swift */; };
-		CAB8DC861FA4FEA100BE9A1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8DC851FA4FEA100BE9A1C /* ViewController.swift */; };
 		CAB8DC891FA4FEA100BE9A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB8DC871FA4FEA100BE9A1C /* Main.storyboard */; };
 		CAB8DC8B1FA4FEA100BE9A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB8DC8A1FA4FEA100BE9A1C /* Assets.xcassets */; };
 		CAB8DC8E1FA4FEA100BE9A1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB8DC8C1FA4FEA100BE9A1C /* LaunchScreen.storyboard */; };
+		CAB8DC9A1FA4FF9B00BE9A1C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8DC991FA4FF9B00BE9A1C /* InitialViewController.swift */; };
+		CAB8DC9C1FA4FFE700BE9A1C /* ButtonImageLabelDown.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB8DC9B1FA4FFE700BE9A1C /* ButtonImageLabelDown.xib */; };
+		CAB8DC9E1FA5007A00BE9A1C /* ButtonImageLabelDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8DC9D1FA5007A00BE9A1C /* ButtonImageLabelDown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CAB8DC801FA4FEA100BE9A1C /* hoytecuento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hoytecuento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB8DC831FA4FEA100BE9A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAB8DC851FA4FEA100BE9A1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAB8DC881FA4FEA100BE9A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAB8DC8A1FA4FEA100BE9A1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB8DC8D1FA4FEA100BE9A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB8DC8F1FA4FEA100BE9A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB8DC991FA4FF9B00BE9A1C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		CAB8DC9B1FA4FFE700BE9A1C /* ButtonImageLabelDown.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonImageLabelDown.xib; sourceTree = "<group>"; };
+		CAB8DC9D1FA5007A00BE9A1C /* ButtonImageLabelDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImageLabelDown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		CAB8DC821FA4FEA100BE9A1C /* hoytecuento */ = {
 			isa = PBXGroup;
 			children = (
-				CAB8DC831FA4FEA100BE9A1C /* AppDelegate.swift */,
-				CAB8DC851FA4FEA100BE9A1C /* ViewController.swift */,
+				CAB8DC981FA4FF6500BE9A1C /* Initial */,
+				CAB8DC961FA4FF4A00BE9A1C /* Common */,
+				CAB8DC951FA4FEB600BE9A1C /* SupportFiles */,
 				CAB8DC871FA4FEA100BE9A1C /* Main.storyboard */,
+			);
+			path = hoytecuento;
+			sourceTree = "<group>";
+		};
+		CAB8DC951FA4FEB600BE9A1C /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CAB8DC831FA4FEA100BE9A1C /* AppDelegate.swift */,
 				CAB8DC8A1FA4FEA100BE9A1C /* Assets.xcassets */,
 				CAB8DC8C1FA4FEA100BE9A1C /* LaunchScreen.storyboard */,
 				CAB8DC8F1FA4FEA100BE9A1C /* Info.plist */,
 			);
-			path = hoytecuento;
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CAB8DC961FA4FF4A00BE9A1C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CAB8DC971FA4FF5600BE9A1C /* CustomView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CAB8DC971FA4FF5600BE9A1C /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				CAB8DC9B1FA4FFE700BE9A1C /* ButtonImageLabelDown.xib */,
+				CAB8DC9D1FA5007A00BE9A1C /* ButtonImageLabelDown.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		CAB8DC981FA4FF6500BE9A1C /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				CAB8DC991FA4FF9B00BE9A1C /* InitialViewController.swift */,
+			);
+			path = Initial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB8DC9C1FA4FFE700BE9A1C /* ButtonImageLabelDown.xib in Resources */,
 				CAB8DC8E1FA4FEA100BE9A1C /* LaunchScreen.storyboard in Resources */,
 				CAB8DC8B1FA4FEA100BE9A1C /* Assets.xcassets in Resources */,
 				CAB8DC891FA4FEA100BE9A1C /* Main.storyboard in Resources */,
@@ -136,7 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB8DC861FA4FEA100BE9A1C /* ViewController.swift in Sources */,
+				CAB8DC9E1FA5007A00BE9A1C /* ButtonImageLabelDown.swift in Sources */,
+				CAB8DC9A1FA4FF9B00BE9A1C /* InitialViewController.swift in Sources */,
 				CAB8DC841FA4FEA100BE9A1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,12 +316,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QWE8HND59P;
-				INFOPLIST_FILE = hoytecuento/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/hoytecuento/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoytecuento;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -291,12 +331,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QWE8HND59P;
-				INFOPLIST_FILE = hoytecuento/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/hoytecuento/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoytecuento;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
