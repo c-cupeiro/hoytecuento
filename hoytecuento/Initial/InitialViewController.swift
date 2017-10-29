@@ -30,6 +30,25 @@ class InitialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let subMenuVC = segue.destination as? SubMenuViewController{
+            
+            switch segue.identifier ?? "" {
+            case "HistorySubMenu":
+                subMenuVC.subMenuText = "Historia"
+                subMenuVC.createButtonText = "Crear Historia"
+                subMenuVC.showButtonText = "Ver Historia"
+            case "ComicSubMenu":
+                subMenuVC.subMenuText = "Comic"
+                subMenuVC.createButtonText = "Crear Comic"
+                subMenuVC.showButtonText = "Ver Comic"
+            default:
+                print("Segue not correct on InitialVC")
+            }
+        }
+        
+    }
+    
     @objc private func buttonHistoryClicked(){
         print("History clicked")
         historyButton.alpha = 1

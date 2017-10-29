@@ -119,6 +119,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMC-6n-SO3" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                        <rect key="frame" x="161" y="235" width="210" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="escenario"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Crear Comic"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIm-b4-spB" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                        <rect key="frame" x="410" y="235" width="217" height="243"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="ver"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Ver Comic"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="4mF-Sf-Ar8" firstAttribute="leading" secondItem="BnK-U1-jZQ" secondAttribute="leading" constant="66" id="LiZ-Oa-Oji"/>
@@ -142,6 +159,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lfA-9v-Jeo"/>
                     </view>
+                    <connections>
+                        <outlet property="createButton" destination="lMC-6n-SO3" id="2wn-zJ-89O"/>
+                        <outlet property="showButton" destination="uIm-b4-spB" id="CM7-j3-yB5"/>
+                        <outlet property="submenuTitle" destination="4mF-Sf-Ar8" id="hRd-aM-o4U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouT-ga-Z7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,6 +194,8 @@
         <image name="Bocadillo_Inicio" width="1024" height="783"/>
         <image name="Buho" width="906" height="1024"/>
         <image name="Historia" width="208" height="194"/>
+        <image name="escenario" width="500" height="500"/>
+        <image name="ver" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="FLI-J1-QtE"/>

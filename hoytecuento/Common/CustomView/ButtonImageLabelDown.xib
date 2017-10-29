@@ -35,7 +35,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vif-s0-aQC">
-                    <rect key="frame" x="0.0" y="0.0" width="233" height="179"/>
+                    <rect key="frame" x="5" y="5" width="223" height="174"/>
                     <accessibility key="accessibilityConfiguration">
                         <accessibilityTraits key="traits" notEnabled="YES"/>
                     </accessibility>
@@ -46,13 +46,13 @@
                 <accessibilityTraits key="traits" notEnabled="YES"/>
             </accessibility>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vif-s0-aQC" secondAttribute="trailing" id="1Fp-sG-927"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vif-s0-aQC" secondAttribute="trailing" constant="5" id="1Fp-sG-927"/>
                 <constraint firstItem="xf2-hp-NGC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="6Qa-qZ-5KA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xf2-hp-NGC" secondAttribute="bottom" constant="10" id="ChR-0M-6hN"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xf2-hp-NGC" secondAttribute="trailing" constant="16" id="Kgx-vE-ftz"/>
-                <constraint firstItem="vif-s0-aQC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="SUd-qj-tcY"/>
+                <constraint firstItem="vif-s0-aQC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="SUd-qj-tcY"/>
                 <constraint firstItem="xf2-hp-NGC" firstAttribute="top" secondItem="vif-s0-aQC" secondAttribute="bottom" constant="10" id="cfL-UD-ijo"/>
-                <constraint firstItem="vif-s0-aQC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tDC-mp-w9e"/>
+                <constraint firstItem="vif-s0-aQC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="tDC-mp-w9e"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

@@ -12,12 +12,15 @@ class CustomNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let width = self.navigationBar.frame.size.width
+        let backImage = UIImage(named:"flecha_izq")
+        UINavigationBar.appearance().frame = CGRect(x: 0, y: 0, width: width, height: 100)
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(),for:.default)
-        let backImage = UIImage(named: "flecha_izq")
-        self.navigationBar.backIndicatorImage = backImage
-        //self.navigationBar.backIndicatorTransitionMaskImage = backImage
-        self.navigationBar.backItem?.title = ""
+        
+        
+        UIBarButtonItem.appearance().setBackButtonBackgroundImage(backImage, for: .normal, barMetrics: .default)
+        
         // Do any additional setup after loading the view.
     }
 
