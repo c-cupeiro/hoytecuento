@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ButtonImageLabelDown: UIView {
+class ButtonImageLabelDown: UIButton {
     @IBOutlet weak var buttonImage: UIImageView!
     @IBOutlet weak var buttonLabel: UILabel!
     
@@ -36,6 +36,16 @@ class ButtonImageLabelDown: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.alpha = 0.5
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        self.alpha = 1
     }
     
     private func setup(){

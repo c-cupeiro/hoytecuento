@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nC2-fo-NVb">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -30,45 +30,39 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-Ha-muB">
-                                <rect key="frame" x="308" y="20" width="716" height="648"/>
+                                <rect key="frame" x="308" y="64" width="716" height="604"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bocadillo_Inicio" translatesAutoresizingMaskIntoConstraints="NO" id="CjQ-qc-J18">
-                                        <rect key="frame" x="0.0" y="0.0" width="716" height="648"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="716" height="604"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy te cuento..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZf-E2-Twb">
-                                        <rect key="frame" x="66" y="104" width="584" height="114"/>
+                                        <rect key="frame" x="66" y="104" width="584" height="63.5"/>
                                         <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOT-YV-fan" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
-                                        <rect key="frame" x="137" y="244" width="208" height="237"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWj-fY-4IP" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                        <rect key="frame" x="136" y="242" width="212" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="image" value="Historia"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="label" value="Historia"/>
                                         </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T47-yi-Uzd" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
-                                        <rect key="frame" x="376" y="244" width="208" height="237"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAd-fw-lG5" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                        <rect key="frame" x="368" y="242" width="212" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="image" value="Bocadillo"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="label" value="Comic"/>
                                         </userDefinedRuntimeAttributes>
-                                    </view>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="leading" secondItem="DOT-YV-fan" secondAttribute="trailing" constant="31" id="07B-HG-Wcm"/>
                                     <constraint firstAttribute="trailing" secondItem="OZf-E2-Twb" secondAttribute="trailing" constant="66" id="3MT-V2-EwC"/>
-                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="width" secondItem="DOT-YV-fan" secondAttribute="width" id="5q5-Vk-EZH"/>
-                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="height" secondItem="DOT-YV-fan" secondAttribute="height" id="8AI-az-OM1"/>
-                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="top" secondItem="OZf-E2-Twb" secondAttribute="bottom" constant="26" id="ARn-uk-tmL"/>
                                     <constraint firstItem="OZf-E2-Twb" firstAttribute="top" secondItem="Q1o-Ha-muB" secondAttribute="top" constant="104" id="Fxc-u9-TzY"/>
-                                    <constraint firstItem="DOT-YV-fan" firstAttribute="top" secondItem="OZf-E2-Twb" secondAttribute="bottom" constant="26" id="G50-M0-kPh"/>
-                                    <constraint firstItem="DOT-YV-fan" firstAttribute="leading" secondItem="Q1o-Ha-muB" secondAttribute="leading" constant="137" id="HCl-gi-0vd"/>
-                                    <constraint firstItem="T47-yi-Uzd" firstAttribute="top" secondItem="Q1o-Ha-muB" secondAttribute="top" constant="244" id="Heu-sv-wfQ"/>
                                     <constraint firstItem="CjQ-qc-J18" firstAttribute="top" secondItem="Q1o-Ha-muB" secondAttribute="top" id="RhC-Qf-lgK"/>
                                     <constraint firstAttribute="bottom" secondItem="CjQ-qc-J18" secondAttribute="bottom" id="StG-no-WeZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="DOT-YV-fan" secondAttribute="bottom" constant="167" id="Wih-jk-6xU"/>
                                     <constraint firstItem="OZf-E2-Twb" firstAttribute="leading" secondItem="Q1o-Ha-muB" secondAttribute="leading" constant="66" id="bvr-lB-uvY"/>
                                     <constraint firstItem="CjQ-qc-J18" firstAttribute="leading" secondItem="Q1o-Ha-muB" secondAttribute="leading" id="gWm-V7-Ghw"/>
                                     <constraint firstAttribute="trailing" secondItem="CjQ-qc-J18" secondAttribute="trailing" id="liy-nR-YpB"/>
@@ -86,14 +80,30 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="buttonComic" destination="T47-yi-Uzd" id="r0B-08-ReR"/>
-                        <outlet property="buttonHistory" destination="DOT-YV-fan" id="b06-qY-1ZZ"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="ZY4-Rf-qMt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.5703125" y="35.9375"/>
+            <point key="canvasLocation" x="411" y="36"/>
+        </scene>
+        <!--Custom Navigation View Controller-->
+        <scene sceneID="gOW-09-VPf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nC2-fo-NVb" customClass="CustomNavigationViewController" customModule="hoytecuento" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EHM-pH-t6a">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.24306735396385193" green="1" blue="0.36997729539871216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UWp-W7-JaP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCA-7o-Gy4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279" y="36"/>
         </scene>
     </scenes>
     <resources>

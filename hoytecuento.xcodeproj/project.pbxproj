@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA472C5F1FA5DBB300506F5E /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA472C5E1FA5DBB300506F5E /* CustomNavigationViewController.swift */; };
 		CAB8DC841FA4FEA100BE9A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8DC831FA4FEA100BE9A1C /* AppDelegate.swift */; };
 		CAB8DC891FA4FEA100BE9A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB8DC871FA4FEA100BE9A1C /* Main.storyboard */; };
 		CAB8DC8B1FA4FEA100BE9A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB8DC8A1FA4FEA100BE9A1C /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA472C5E1FA5DBB300506F5E /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
 		CAB8DC801FA4FEA100BE9A1C /* hoytecuento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hoytecuento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB8DC831FA4FEA100BE9A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB8DC881FA4FEA100BE9A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA472C5D1FA5DB8000506F5E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CA472C5E1FA5DBB300506F5E /* CustomNavigationViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		CAB8DC771FA4FEA100BE9A1C = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		CAB8DC821FA4FEA100BE9A1C /* hoytecuento */ = {
 			isa = PBXGroup;
 			children = (
+				CA472C5D1FA5DB8000506F5E /* Navigation */,
 				CAB8DC981FA4FF6500BE9A1C /* Initial */,
 				CAB8DC961FA4FF4A00BE9A1C /* Common */,
 				CAB8DC951FA4FEB600BE9A1C /* SupportFiles */,
@@ -176,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB8DC9E1FA5007A00BE9A1C /* ButtonImageLabelDown.swift in Sources */,
+				CA472C5F1FA5DBB300506F5E /* CustomNavigationViewController.swift in Sources */,
 				CAB8DC9A1FA4FF9B00BE9A1C /* InitialViewController.swift in Sources */,
 				CAB8DC841FA4FEA100BE9A1C /* AppDelegate.swift in Sources */,
 			);

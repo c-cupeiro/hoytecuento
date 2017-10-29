@@ -10,13 +10,11 @@ import UIKit
 
 class InitialViewController: UIViewController {
 
-    @IBOutlet weak var buttonHistory: ButtonImageLabelDown!
-    @IBOutlet weak var buttonComic: ButtonImageLabelDown!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonHistory.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.buttonHistoryTapped(_:))))
-        buttonComic.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.buttonComicTapped(_:))))
+       // buttonHistory.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.buttonHistoryTapped(_:))))
+       // buttonComic.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.buttonComicTapped(_:))))
         // Do any additional setup after loading the view.
     }
 
@@ -25,15 +23,5 @@ class InitialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func buttonHistoryTapped(_ sender: UITapGestureRecognizer){
-        buttonHistory.simulateButtonAnimation()
-        print("Button History Pressed")
-        
-    }
-
-    @objc func buttonComicTapped(_ sender: UITapGestureRecognizer){
-        buttonComic.simulateButtonAnimation()
-        print("Button Comic Pressed")
-    }
     
 }
