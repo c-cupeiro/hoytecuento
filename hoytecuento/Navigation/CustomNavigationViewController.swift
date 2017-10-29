@@ -14,6 +14,10 @@ class CustomNavigationViewController: UINavigationController {
         super.viewDidLoad()
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(),for:.default)
+        let backImage = UIImage(named: "flecha_izq")
+        self.navigationBar.backIndicatorImage = backImage
+        //self.navigationBar.backIndicatorTransitionMaskImage = backImage
+        self.navigationBar.backItem?.title = ""
         // Do any additional setup after loading the view.
     }
 

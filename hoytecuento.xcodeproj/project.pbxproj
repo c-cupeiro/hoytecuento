@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA472C5F1FA5DBB300506F5E /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA472C5E1FA5DBB300506F5E /* CustomNavigationViewController.swift */; };
+		CA472C611FA5DE3C00506F5E /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA472C601FA5DE3C00506F5E /* SubMenuViewController.swift */; };
 		CAB8DC841FA4FEA100BE9A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8DC831FA4FEA100BE9A1C /* AppDelegate.swift */; };
 		CAB8DC891FA4FEA100BE9A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB8DC871FA4FEA100BE9A1C /* Main.storyboard */; };
 		CAB8DC8B1FA4FEA100BE9A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB8DC8A1FA4FEA100BE9A1C /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		CA472C5E1FA5DBB300506F5E /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
+		CA472C601FA5DE3C00506F5E /* SubMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
 		CAB8DC801FA4FEA100BE9A1C /* hoytecuento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hoytecuento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB8DC831FA4FEA100BE9A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB8DC881FA4FEA100BE9A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB8DC991FA4FF9B00BE9A1C /* InitialViewController.swift */,
+				CA472C601FA5DE3C00506F5E /* SubMenuViewController.swift */,
 			);
 			path = Initial;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				CA472C5F1FA5DBB300506F5E /* CustomNavigationViewController.swift in Sources */,
 				CAB8DC9A1FA4FF9B00BE9A1C /* InitialViewController.swift in Sources */,
 				CAB8DC841FA4FEA100BE9A1C /* AppDelegate.swift in Sources */,
+				CA472C611FA5DE3C00506F5E /* SubMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

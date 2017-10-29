@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ButtonImageLabelDown: UIButton {
+class ButtonImageLabelDown: UIView {
     @IBOutlet weak var buttonImage: UIImageView!
     @IBOutlet weak var buttonLabel: UILabel!
     
