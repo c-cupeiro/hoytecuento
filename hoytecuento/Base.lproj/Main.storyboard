@@ -36,33 +36,40 @@
                                         <rect key="frame" x="0.0" y="0.0" width="716" height="604"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy te cuento..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZf-E2-Twb">
-                                        <rect key="frame" x="66" y="104" width="584" height="63.5"/>
+                                        <rect key="frame" x="66" y="75" width="584" height="61"/>
                                         <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Al-PU-NPl" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
-                                        <rect key="frame" x="139" y="224" width="209" height="206"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="Historia"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Historia"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ka-n5-odc" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
-                                        <rect key="frame" x="373" y="224" width="183" height="206"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="Bocadillo"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Comic"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OZy-NC-Qad">
+                                        <rect key="frame" x="130" y="170" width="456" height="264"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Al-PU-NPl" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="223" height="264"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Historia"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="Historia"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ka-n5-odc" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                                <rect key="frame" x="233" y="0.0" width="223" height="264"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Bocadillo"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="Comic"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="OZf-E2-Twb" secondAttribute="trailing" constant="66" id="3MT-V2-EwC"/>
-                                    <constraint firstItem="OZf-E2-Twb" firstAttribute="top" secondItem="Q1o-Ha-muB" secondAttribute="top" constant="104" id="Fxc-u9-TzY"/>
+                                    <constraint firstItem="OZy-NC-Qad" firstAttribute="leading" secondItem="Q1o-Ha-muB" secondAttribute="leading" constant="130" id="4vt-Q4-MRW"/>
+                                    <constraint firstItem="OZf-E2-Twb" firstAttribute="top" secondItem="Q1o-Ha-muB" secondAttribute="top" constant="75" id="Fxc-u9-TzY"/>
+                                    <constraint firstAttribute="bottom" secondItem="OZy-NC-Qad" secondAttribute="bottom" constant="170" id="G8M-Ah-axo"/>
+                                    <constraint firstAttribute="trailing" secondItem="OZy-NC-Qad" secondAttribute="trailing" constant="130" id="JhD-Om-dVE"/>
                                     <constraint firstItem="CjQ-qc-J18" firstAttribute="top" secondItem="Q1o-Ha-muB" secondAttribute="top" id="RhC-Qf-lgK"/>
                                     <constraint firstAttribute="bottom" secondItem="CjQ-qc-J18" secondAttribute="bottom" id="StG-no-WeZ"/>
+                                    <constraint firstItem="OZy-NC-Qad" firstAttribute="top" secondItem="OZf-E2-Twb" secondAttribute="bottom" constant="34" id="Z3R-eF-qm5"/>
                                     <constraint firstItem="OZf-E2-Twb" firstAttribute="leading" secondItem="Q1o-Ha-muB" secondAttribute="leading" constant="66" id="bvr-lB-uvY"/>
                                     <constraint firstItem="CjQ-qc-J18" firstAttribute="leading" secondItem="Q1o-Ha-muB" secondAttribute="leading" id="gWm-V7-Ghw"/>
                                     <constraint firstAttribute="trailing" secondItem="CjQ-qc-J18" secondAttribute="trailing" id="liy-nR-YpB"/>
