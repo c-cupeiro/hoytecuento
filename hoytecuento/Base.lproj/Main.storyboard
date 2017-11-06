@@ -91,90 +91,13 @@
                     <connections>
                         <outlet property="comicButton" destination="7ka-n5-odc" id="Tig-hs-y8l"/>
                         <outlet property="historyButton" destination="6Al-PU-NPl" id="sn5-3K-uI7"/>
-                        <segue destination="mQF-WQ-fQG" kind="show" identifier="HistorySubMenu" id="u1A-41-Mag"/>
-                        <segue destination="mQF-WQ-fQG" kind="show" identifier="ComicSubMenu" id="FLI-J1-QtE"/>
+                        <segue destination="aaN-jD-ySv" kind="show" identifier="HistorySubMenu" id="bdV-V4-BDu"/>
+                        <segue destination="aaN-jD-ySv" kind="show" identifier="ComicSubMenu" id="n3K-eS-JJK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="410.7421875" y="35.9375"/>
-        </scene>
-        <!--Sub Menu View Controller-->
-        <scene sceneID="WIn-AT-Owo">
-            <objects>
-                <viewController id="mQF-WQ-fQG" customClass="SubMenuViewController" customModule="hoytecuento" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ed1-6R-WJr">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Buho" translatesAutoresizingMaskIntoConstraints="NO" id="pET-6I-GQi">
-                                <rect key="frame" x="20" y="271" width="280" height="397"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="ZqU-ND-qte"/>
-                                    <constraint firstAttribute="height" constant="397" id="thU-Ia-BbN"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BnK-U1-jZQ">
-                                <rect key="frame" x="308" y="64" width="716" height="604"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bocadillo_Inicio" translatesAutoresizingMaskIntoConstraints="NO" id="q4e-eP-IeI">
-                                        <rect key="frame" x="0.0" y="0.0" width="716" height="604"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy te cuento..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mF-Sf-Ar8">
-                                        <rect key="frame" x="66" y="104" width="584" height="63.5"/>
-                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMC-6n-SO3" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
-                                        <rect key="frame" x="161" y="235" width="210" height="232"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="escenario"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Crear Comic"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIm-b4-spB" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
-                                        <rect key="frame" x="410" y="235" width="217" height="243"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="ver"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Ver Comic"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="4mF-Sf-Ar8" firstAttribute="leading" secondItem="BnK-U1-jZQ" secondAttribute="leading" constant="66" id="LiZ-Oa-Oji"/>
-                                    <constraint firstItem="4mF-Sf-Ar8" firstAttribute="top" secondItem="BnK-U1-jZQ" secondAttribute="top" constant="104" id="av3-gu-DjP"/>
-                                    <constraint firstAttribute="trailing" secondItem="q4e-eP-IeI" secondAttribute="trailing" id="cX0-1t-jIh"/>
-                                    <constraint firstAttribute="trailing" secondItem="4mF-Sf-Ar8" secondAttribute="trailing" constant="66" id="ivb-IC-GVR"/>
-                                    <constraint firstAttribute="bottom" secondItem="q4e-eP-IeI" secondAttribute="bottom" id="rUZ-JT-bDP"/>
-                                    <constraint firstItem="q4e-eP-IeI" firstAttribute="top" secondItem="BnK-U1-jZQ" secondAttribute="top" id="rjG-PJ-Vix"/>
-                                    <constraint firstItem="q4e-eP-IeI" firstAttribute="leading" secondItem="BnK-U1-jZQ" secondAttribute="leading" id="wBG-Ab-7r6"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.24306735400000001" green="1" blue="0.36997729540000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="lfA-9v-Jeo" firstAttribute="bottom" secondItem="BnK-U1-jZQ" secondAttribute="bottom" constant="100" id="4Ce-8g-zoj"/>
-                            <constraint firstItem="BnK-U1-jZQ" firstAttribute="leading" secondItem="pET-6I-GQi" secondAttribute="trailing" constant="8" id="YVl-7h-vxH"/>
-                            <constraint firstItem="BnK-U1-jZQ" firstAttribute="top" secondItem="lfA-9v-Jeo" secondAttribute="top" id="aPc-F6-XJC"/>
-                            <constraint firstItem="pET-6I-GQi" firstAttribute="bottom" secondItem="BnK-U1-jZQ" secondAttribute="bottom" id="jRn-i6-owi"/>
-                            <constraint firstItem="lfA-9v-Jeo" firstAttribute="trailing" secondItem="BnK-U1-jZQ" secondAttribute="trailing" id="pls-Kb-v53"/>
-                            <constraint firstItem="pET-6I-GQi" firstAttribute="leading" secondItem="lfA-9v-Jeo" secondAttribute="leading" constant="20" id="rs3-ft-NPC"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="lfA-9v-Jeo"/>
-                    </view>
-                    <connections>
-                        <outlet property="createButton" destination="lMC-6n-SO3" id="2wn-zJ-89O"/>
-                        <outlet property="showButton" destination="uIm-b4-spB" id="CM7-j3-yB5"/>
-                        <outlet property="submenuTitle" destination="4mF-Sf-Ar8" id="hRd-aM-o4U"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ouT-ga-Z7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1079.8828125" y="34.375"/>
         </scene>
         <!--Custom Navigation View Controller-->
         <scene sceneID="gOW-09-VPf">
@@ -195,6 +118,92 @@
             </objects>
             <point key="canvasLocation" x="-279" y="36"/>
         </scene>
+        <!--Sub Menu View Controller-->
+        <scene sceneID="mAR-Li-gAu">
+            <objects>
+                <viewController id="aaN-jD-ySv" customClass="SubMenuViewController" customModule="hoytecuento" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ego-ao-cSi">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Buho" translatesAutoresizingMaskIntoConstraints="NO" id="e12-Aa-NXg">
+                                <rect key="frame" x="20" y="271" width="280" height="397"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="397" id="K9S-Mo-afl"/>
+                                    <constraint firstAttribute="width" constant="280" id="XAQ-Pi-TlP"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73M-Md-egZ">
+                                <rect key="frame" x="308" y="64" width="716" height="604"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bocadillo_Inicio" translatesAutoresizingMaskIntoConstraints="NO" id="Hyq-Cb-Gcy">
+                                        <rect key="frame" x="0.0" y="0.0" width="716" height="604"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy te cuento..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVp-zS-nl8">
+                                        <rect key="frame" x="66" y="75" width="584" height="63.5"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JMm-ov-cSA">
+                                        <rect key="frame" x="130" y="172.5" width="456" height="261.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oC-Lg-2Bt" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="223" height="261.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="escenario"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="Crear Comic"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb3-7I-3zR" customClass="ButtonImageLabelDown" customModule="hoytecuento" customModuleProvider="target">
+                                                <rect key="frame" x="233" y="0.0" width="223" height="261.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="ver"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="Ver Comic"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Hyq-Cb-Gcy" secondAttribute="trailing" id="00g-YN-tvx"/>
+                                    <constraint firstAttribute="bottom" secondItem="JMm-ov-cSA" secondAttribute="bottom" constant="170" id="CdX-yk-Alh"/>
+                                    <constraint firstItem="JMm-ov-cSA" firstAttribute="leading" secondItem="73M-Md-egZ" secondAttribute="leading" constant="130" id="OfW-wU-l9m"/>
+                                    <constraint firstItem="JMm-ov-cSA" firstAttribute="top" secondItem="eVp-zS-nl8" secondAttribute="bottom" constant="34" id="SjN-3Q-aes"/>
+                                    <constraint firstItem="eVp-zS-nl8" firstAttribute="leading" secondItem="73M-Md-egZ" secondAttribute="leading" constant="66" id="X1p-05-iTt"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hyq-Cb-Gcy" secondAttribute="bottom" id="fuZ-Qc-img"/>
+                                    <constraint firstAttribute="trailing" secondItem="JMm-ov-cSA" secondAttribute="trailing" constant="130" id="jWc-9G-Ptd"/>
+                                    <constraint firstItem="eVp-zS-nl8" firstAttribute="top" secondItem="73M-Md-egZ" secondAttribute="top" constant="75" id="lft-sG-ryG"/>
+                                    <constraint firstItem="Hyq-Cb-Gcy" firstAttribute="leading" secondItem="73M-Md-egZ" secondAttribute="leading" id="rIK-Jd-v0D"/>
+                                    <constraint firstItem="Hyq-Cb-Gcy" firstAttribute="top" secondItem="73M-Md-egZ" secondAttribute="top" id="uj9-8k-zWp"/>
+                                    <constraint firstAttribute="trailing" secondItem="eVp-zS-nl8" secondAttribute="trailing" constant="66" id="wGh-wM-J06"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.24215237649999999" green="1" blue="0.36963630580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LOy-IN-uOS" firstAttribute="trailing" secondItem="73M-Md-egZ" secondAttribute="trailing" id="7Im-cT-kD6"/>
+                            <constraint firstItem="73M-Md-egZ" firstAttribute="top" secondItem="LOy-IN-uOS" secondAttribute="top" id="Bbm-Zh-YxH"/>
+                            <constraint firstItem="LOy-IN-uOS" firstAttribute="bottom" secondItem="73M-Md-egZ" secondAttribute="bottom" constant="100" id="COc-SI-faH"/>
+                            <constraint firstItem="e12-Aa-NXg" firstAttribute="leading" secondItem="LOy-IN-uOS" secondAttribute="leading" constant="20" id="WOS-e3-Q0u"/>
+                            <constraint firstItem="73M-Md-egZ" firstAttribute="leading" secondItem="e12-Aa-NXg" secondAttribute="trailing" constant="8" id="ism-28-fGb"/>
+                            <constraint firstItem="e12-Aa-NXg" firstAttribute="bottom" secondItem="73M-Md-egZ" secondAttribute="bottom" id="jcI-Ow-VPF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LOy-IN-uOS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K4g-7I-Lcg"/>
+                    <connections>
+                        <outlet property="createButton" destination="9oC-Lg-2Bt" id="wVe-tv-tmI"/>
+                        <outlet property="showButton" destination="nb3-7I-3zR" id="UCR-ap-t0D"/>
+                        <outlet property="submenuTitle" destination="eVp-zS-nl8" id="p5q-5q-6qQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yOC-WL-QWm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130.2734375" y="35.9375"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Bocadillo" width="180" height="146"/>
@@ -205,6 +214,6 @@
         <image name="ver" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FLI-J1-QtE"/>
+        <segue reference="n3K-eS-JJK"/>
     </inferredMetricsTieBreakers>
 </document>
